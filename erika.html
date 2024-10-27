@@ -1,0 +1,110 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loopi World</title>
+  <style>
+    body {
+        background-color: rgb(209,235,246);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      margin-bottom: 20px;
+    }
+    
+    .slide-description {
+      text-align: center;
+      margin-bottom: 10px;
+      color: white;
+      flex-direction: column;
+      text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center; 
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 10px;
+      color: rgb(145, 193, 220);
+    }
+  </style>
+</head>
+<body background="c:\Users\Dayan\Pictures\ricav.png">
+  <div class="slide-container">
+    <div class="slide" id="slide1">
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a0522984-8c0c-4916-8bda-eccbae7669d9/d6q64s0-04d51867-6eb1-4a5f-b39a-6db697435975.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EwNTIyOTg0LThjMGMtNDkxNi04YmRhLWVjY2JhZTc2NjlkOVwvZDZxNjRzMC0wNGQ1MTg2Ny02ZWIxLTRhNWYtYjM5YS02ZGI2OTc0MzU5NzUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.4RIREbGqZgXnsWbpXO1dEw3DM15Y1iGnJzHCoesSULs" alt="Slide 1 Image">
+      <p class="slide-description">I'm always looking for new adventures and making new friends.</p>
+       <p class="slide-description">I hope we can be friends too!</p>
+      <div class="button-container">
+        <button class="button" onclick="showSlide(2)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide" id="slide2">
+      <img src="https://pnghq.com/wp-content/uploads/pnghq.com-download-hd-cinnamon-roll-sanrio-png-transparent-png-image.png" alt="Slide 2 Image">
+      <p class="slide-description">"Hello, everyone! I'm Cinnamoroll, a little puppy born from a fluffy cloud. </p>
+      <p class="slide-description">One day, I drifted down to a cozy café... </p>
+        <div class="button-container">
+      <button class="button" onclick="showSlide(1)">Previous</button>
+        <button class="button" onclick="showSlide(3)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide" id="slide3">
+     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a0522984-8c0c-4916-8bda-eccbae7669d9/d6q63t5-8c1124cb-b163-4b08-989c-67e0e074d151.png/v1/fill/w_400,h_311/cinnamoroll_png_by_dellanovia_d6q63t5-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzExIiwicGF0aCI6IlwvZlwvYTA1MjI5ODQtOGMwYy00OTE2LThiZGEtZWNjYmFlNzY2OWQ5XC9kNnE2M3Q1LThjMTEyNGNiLWIxNjMtNGIwOC05ODljLTY3ZTBlMDc0ZDE1MS5wbmciLCJ3aWR0aCI6Ijw9NDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Gzkr6A7brqh22Eeic0M9bwdy5QAxGgioT44OBsqLRG4" alt="Slide 3 Image">
+     <p class="slide-description">where I met a kind café owner who named me Cinnamoroll because</p>
+     <p class="slide-description"> of my curly tail that looks just like a cinnamon roll.</p>
+     <div class="button-container">
+        <button class="button" onclick="showSlide(2)">Previous</button>
+        <button class="button" onclick="showSlide(4)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide" id="slide4">
+      <img src="https://64.media.tumblr.com/7aeccc32c2b873c3037617a331baafa7/tumblr_nzn0e6V9lR1ul5mg5o1_1280.png" alt="Slide 4 image">
+      <p class="slide-description">Since then, I've been spreading joy and sweetness wherever I go. </p>
+      <p class="slide-description">Let's have a wonderful time together!</p>
+      <div class="button-container">
+        <button class="button" onclick="showSlide(3)">Previous</button>
+        <button class="button" onclick="showSlide(5)">Next</button>
+      </div>
+    </div>
+
+    <div class="slide" id="slide5">
+        <img src="https://i.pinimg.com/originals/f9/1d/2f/f91d2f4e29ecd76ab334c654ae1b50f3.png" alt="Slide 5 image">
+        <p class="slide-description">You've arrived at your destination! </p>
+        <div class="button-container">
+          <button class="button" onclick="showSlide(4)">Go back</button>
+        </div>
+      </div>
+    </div>
+
+  <script>
+    function showSlide(slideIndex) {
+      const slides = document.querySelectorAll('.slide');
+      slides.forEach(slide => slide.style.display = 'none');
+      document.getElementById(`slide${slideIndex}`).style.display = 'block';
+    }
+
+    // Initially show the first slide
+    showSlide(1);
+  </script>
+</body>
+</html>
